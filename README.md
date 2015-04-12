@@ -53,7 +53,7 @@ prime_checker.is_prime?(17) #=> true
   3  | 6    9  
 
 
-  prime_table.generate
+  prime_table.generate(10)
   
        2    3    5    7    11   13   17   19   23   29
        ---- ---- ---- ---- ---- ---- ---- ---- ---- ----

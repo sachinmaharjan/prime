@@ -1,15 +1,16 @@
-Check Whether a number is Prime or not
+####Check Whether a number is Prime or not
+```
+require_relative 'prime_checker'
 
-  require_relative 'prime_checker'
+prime_checker = PrimeChecker.new
 
-  prime_checker = PrimeChecker.new
+prime_checker.is_prime?(3) #=> true
+prime_checker.is_prime?(25) #=> false
+prime_checker.is_prime?(17) #=> true
+```
 
-  prime_checker.is_prime?(3) #=> true
-  prime_checker.is_prime?(25) #=> false
-  prime_checker.is_prime?(17) #=> true
-
-Generate list of prime numbers:
-
+####Generate list of prime numbers:
+```
   require_relative 'prime_table'
 
   prime_table = PrimeTable.new
@@ -22,9 +23,10 @@ Generate list of prime numbers:
   #=> [2]
   prime_table.get_primes(5)
   #=> [2, 3, 5, 7, 11]
+```
 
-Pass any list to print grid whether be list of prime or list of any numbers
-
+####Pass any list to print grid whether be list of prime or list of any numbers
+```
   require_relative 'grid'
 
   grid = Grid.new
@@ -35,21 +37,24 @@ Pass any list to print grid whether be list of prime or list of any numbers
   2  | 4    6    10
   3  | 6    9    15
   5  | 10   15   25
+```
 
-Print n x n prime table
-
+####Print n x n prime table
+```
   require_relative 'prime_table'
 
   prime_table = PrimeTable.new
 
   prime_table.generate(2)
+  
       2    3
       ---- ----
   2  | 4    6
   3  | 6    9  
 
 
-  prime_table.generate(10)
+  prime_table.generate
+  
        2    3    5    7    11   13   17   19   23   29
        ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
   2  | 4    6    10   14   22   26   34   38   46   58
@@ -63,12 +68,16 @@ Print n x n prime table
   23 | 46   69   115  161  253  299  391  437  529  667  
   29 | 58   87   145  203  319  377  493  551  667  841  
 
+```
 
-Run all test
+####Run all test
+```
   rspec spec/
+```
 
-Run specific test
-
+####Run specific test
+```
   rspec spec/prime_table_spec.rb
   rspec spec/prime_checker_spec.rb
   rspec spec/grid_spec.rb
+```

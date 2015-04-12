@@ -25,7 +25,7 @@ prime_checker.is_prime?(17) #=> true
   #=> [2, 3, 5, 7, 11]
 ```
 
-####Pass any list to print grid whether be list of prime or list of any numbers
+####Pass any list to print multiplication grid of list numbers
 ```
   require_relative 'grid'
 
